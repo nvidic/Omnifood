@@ -42,6 +42,7 @@ section {
     padding: 1%;
 }
 
+
 /* -------- HEADINGS --------- */
 
 h1, 
@@ -219,6 +220,50 @@ header {
 }
 
 
+/*********************************************************/
+/*      FEATURES     */
+/*********************************************************/
 
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
 
+/*********************************************************/
+/*      MEALS     */
+/*********************************************************/
+
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0; /* becaus of normalize.css */
+    overflow: hidden; /* to prevent img from getting outside of its figure container */
+    background-color: #000; /* so that img inside will have dark overlay */
+}
+
+.meal-photo img {
+    opacity: 0.6; /* 60% of figure's black background */
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.65s, opacity 0.65s;
+}
+
+.meal-photo img:hover {    
+    transform: scale(1.04); /* when scale is 1 there is a little white line under img */
+    opacity: 1;
+}
 
