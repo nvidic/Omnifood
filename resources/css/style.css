@@ -216,6 +216,7 @@ header {
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 /*
@@ -384,9 +385,53 @@ header {
     margin-bottom: 5px;
 }
 
+/*********************************************************/
+/*      TESTIMONIALS     */
+/*********************************************************/
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('img/back-customers.jpg');
+    background-size: cover; 
+    color: #fff;
+    background-attachment: fixed; /*the effect where image allways stays on its place 
+                                    when we scroll through website */
+    
+}
+
+blockquote::before {
+    content: '\201C';
+    font-size: 500%;
+    display: block;
+    position: absolute; /* parent (blockquote) must be relative */
+    top: -5px;
+    left: -8px;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+}
+/*
+cite::before {
+    content: '\201C';
+    font-size: 400%;
+}
+*/
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
 
 
-
+cite img {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
 
 
 
